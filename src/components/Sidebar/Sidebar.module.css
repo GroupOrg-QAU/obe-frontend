@@ -1,0 +1,5 @@
+.sideWrapper {
+  display: flex;
+  width: 20%;
+  background-color: rgb(21, 21, 22);
+}
