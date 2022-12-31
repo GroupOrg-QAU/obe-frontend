@@ -2,8 +2,7 @@ import Navbar from "./components/Header/Navbar";
 import profile from "./Assests/profile.png";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
-import Department from "./Pages/Department";
-import FazalTesting from "./FazalTesting";
+import Departments2 from "./Pages/Departments2";
 
 function App() {
   return (
@@ -13,10 +12,7 @@ function App() {
         <Sidebar />
 
         <div>
-          <Department />
-        </div>
-        <div>
-          <FazalTesting />
+          <Departments2 />
         </div>
       </main>
       <footer>
