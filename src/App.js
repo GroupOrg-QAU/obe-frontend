@@ -2,6 +2,7 @@ import Navbar from "./components/Header/Navbar";
 import profile from "./Assests/profile.png";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
+import Department from "./Pages/Department";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <main style={{ display: "flex" }}>
         <Sidebar />
 
-        <div>span1</div>
-        <div>span2</div>
+        <div>
+          <Department />
+        </div>
       </main>
       <footer>
         <Footer />

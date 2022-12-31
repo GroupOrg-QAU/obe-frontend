@@ -2,18 +2,19 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="d-flex flex-column bg-light col-2 rounded-bottom">
+    <div className="d-flex flex-column bg-light col-2 rounded-bottom border border-left-3">
       {/* Dashboard Item */}
       <a
-        class="nav-link fs-6 text-dark "
+        className="nav-link fs-6 text-dark "
         href="/"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseExample"
         aria-expanded="false"
         aria-controls="collapseExample"
+        w
       >
-        <i class=" pe-2 fa-solid fa-house-laptop"></i>
+        <i className=" pe-2 fa-solid fa-house-laptop"></i>
         Dashboard
       </a>
 
@@ -40,7 +41,7 @@ export default function Sidebar() {
       {/* Institue */}
       <hr />
       <a
-        class="nav-link fs-6 text-dark "
+        className="nav-link fs-6 text-dark "
         href="/"
         type="button"
         data-bs-toggle="collapse"
@@ -48,7 +49,7 @@ export default function Sidebar() {
         aria-expanded="false"
         aria-controls="collapseExample-1"
       >
-        <i class="pe-2 fa-solid fa-building-columns"></i>
+        <i className="pe-2 fa-solid fa-building-columns"></i>
         Institue
       </a>
 
@@ -81,7 +82,7 @@ export default function Sidebar() {
       {/* OBE */}
 
       <a
-        class="nav-link fs-6 text-dark "
+        className="nav-link fs-6 text-dark "
         href="/"
         type="button"
         data-bs-toggle="collapse"
@@ -89,7 +90,7 @@ export default function Sidebar() {
         aria-expanded="false"
         aria-controls="collapseExample-2"
       >
-        <i class=" pe-2 fa-solid fa-book"></i>
+        <i className=" pe-2 fa-solid fa-book"></i>
         OBE
       </a>
 
@@ -123,7 +124,7 @@ export default function Sidebar() {
       {/* Reports */}
       <div>
         <a href="/" className="nav-link text-dark">
-          <i class=" pe-2 fa-solid fa-chart-simple"></i>
+          <i className=" pe-2 fa-solid fa-chart-simple"></i>
           Reports
         </a>
       </div>
@@ -131,14 +132,14 @@ export default function Sidebar() {
       {/* Settings */}
       <div>
         <a href="/" className="nav-link text-dark">
-          <i class="pe-2 fa-solid fa-gear"></i>
+          <i className="pe-2 fa-solid fa-gear"></i>
           Settings
         </a>
       </div>
       <hr />
       {/* Admin */}
       <a
-        class="nav-link fs-6 text-dark pb-3"
+        className="nav-link fs-6 text-dark pb-3"
         href="/"
         type="button"
         data-bs-toggle="collapse"
@@ -146,7 +147,7 @@ export default function Sidebar() {
         aria-expanded="false"
         aria-controls="collapseExample-3"
       >
-        <i class="pe-2 fa-solid fa-user"></i>
+        <i className="pe-2 fa-solid fa-user"></i>
         Admin
       </a>
 

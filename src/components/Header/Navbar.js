@@ -3,7 +3,7 @@ import logo from "../../Assests/qau.png";
 export default function Navbar(props) {
   const profile = props.profile;
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light  ">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light  border border-bottom-3">
       <div className="container-fluid pt-1">
         <img
           src={logo}
@@ -14,6 +14,7 @@ export default function Navbar(props) {
         <a href="/" className="navbar-brand h3 ">
           <h5>{props.title}</h5>
         </a>
+
         <ul className="navbar-nav ms-auto me-4">
           <li className="nav-item dropdown">
             <button
