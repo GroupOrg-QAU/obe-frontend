@@ -3,6 +3,7 @@ import profile from "./Assests/profile.png";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
 import Department from "./Pages/Department";
+import FazalTesting from "./FazalTesting";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
 
         <div>
           <Department />
+        </div>
+        <div>
+          <FazalTesting />
         </div>
       </main>
       <footer>
