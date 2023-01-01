@@ -8,17 +8,23 @@ export default function SingleDepart(props) {
           <tbody>
             <tr className="col">
               <td className="col-1">{props.serialNo}</td>
-              <td className="col-2">{props.deptName}</td>
-              <td className="col-2">{props.schoolName}</td>
+              <td className="col-3">{props.deptName}</td>
+              <td className="col-3">{props.schoolName}</td>
               <td className="col-2">{props.deptShortName}</td>
               <td className="col-2">{props.deptStatus}</td>
-              <td className="col-2">
-                <a className="border border-0 ps-2" href="/">
+              <td className="col-2 ">
+                <button
+                  className="border border-0  fs-5"
+                  style={{ color: "#0B5ED7" }}
+                >
                   <i className="fa-solid fa-pen-to-square"></i>
-                </a>
-                <a className="border border-0 ps-3" href="/">
+                </button>
+                <button
+                  className="border border-0  fs-5 "
+                  style={{ color: "#0B5ED7" }}
+                >
                   <i className="fa-solid fa-trash-can"></i>
-                </a>
+                </button>
               </td>
             </tr>
           </tbody>

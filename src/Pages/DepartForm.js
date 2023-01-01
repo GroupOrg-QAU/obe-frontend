@@ -9,7 +9,7 @@ export default function DepartForm() {
             <th className="col-1">
               <label className="form-label">Sr.No</label>
             </th>
-            <th className="col-2">
+            <th className="col-3">
               <div className="form-group">
                 <label htmlFor="department" className="form-label">
                   Department
@@ -22,7 +22,7 @@ export default function DepartForm() {
                 />
               </div>
             </th>
-            <th className="col-2">
+            <th className="col-3">
               <div className="form-group">
                 <label htmlFor="school" className="form-label">
                   School
