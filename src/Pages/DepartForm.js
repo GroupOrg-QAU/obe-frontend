@@ -5,13 +5,13 @@ export default function DepartForm() {
     <form className="container-fluid w-100 form-inline ms-5 ">
       <table className="table">
         <thead>
-          <tr>
-            <th scope="col">
+          <tr className="col">
+            <th className="col-1">
               <label className="form-label">Sr.No</label>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <div className="form-group">
-                <label htmlFor="validationTooltip01" className="form-label">
+                <label htmlFor="department" className="form-label">
                   Department
                 </label>
                 <input
@@ -22,7 +22,7 @@ export default function DepartForm() {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <div className="form-group">
                 <label htmlFor="school" className="form-label">
                   School
@@ -35,7 +35,7 @@ export default function DepartForm() {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <div className="form-group">
                 <label htmlFor="shortname" className="form-label">
                   Short Name
@@ -48,7 +48,7 @@ export default function DepartForm() {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <label htmlFor="active" className="form-label">
                 Active
               </label>
@@ -60,7 +60,7 @@ export default function DepartForm() {
                 </select>
               </div>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <button className="btn btn-primary">Add</button>
             </th>
           </tr>
