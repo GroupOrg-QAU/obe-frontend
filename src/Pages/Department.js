@@ -61,7 +61,7 @@ export default function Department() {
               </div>
             </th>
             <th scope="col">
-              <button className="btn btn-primary">Add</button>
+              <button className="btn btn-primary ">nnn</button>
             </th>
           </tr>
         </thead>

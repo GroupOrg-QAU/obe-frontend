@@ -61,7 +61,7 @@ export default function DepartForm() {
               </div>
             </th>
             <th className="col-2">
-              <button className="btn btn-primary">Add</button>
+              <button className="btn btn-primary col-12">Add</button>
             </th>
           </tr>
         </thead>
