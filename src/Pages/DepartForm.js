@@ -1,8 +1,14 @@
 import React from "react";
-
 export default function DepartForm() {
+  // Submit Handler Fucntion
+  const submitHandler = (event) => {
+    event.preventDefault();
+  };
   return (
-    <form className="container-fluid w-100 form-inline ms-5 ">
+    <form
+      className="container-fluid w-100 form-inline ms-5"
+      onSubmit={submitHandler}
+    >
       <table className="table">
         <thead>
           <tr className="col">
