@@ -14,17 +14,21 @@ function App() {
     <Fragment>
       {/* <Login />
       <SignUp /> */}
-      <Navbar title="Q-OBE" userName="Muhammad Afraz" profile={profile} />
-      <main style={{ display: "flex" }}>
-        <Sidebar />
+      <Fragment>
+        {/* <Login />
+      <SignUp /> */}
+        <Navbar title="Q-OBE" userName="Muhammad Afraz" profile={profile} />
+        <main style={{ display: "flex" }}>
+          <Sidebar />
 
-        <div>
-          <Departments />
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+          <div>
+            <Departments />
+          </div>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </Fragment>
     </Fragment>
   );
 }
