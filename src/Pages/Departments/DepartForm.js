@@ -1,8 +1,34 @@
 import React from "react";
 
-export default function DepartForm() {
+import { useState } from "react";
+export default function DepartForm(props) {
+  const [deptName, setDeptName] = useState("");
+  const [schoolName, setSchoolName] = useState("");
+  const [deptShortName, setDeptShortName] = useState("");
+  const [deptStatus, setDeptStatus] = useState("");
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const formObject = {
+      deptName: deptName,
+      schoolName: schoolName,
+      deptShortName: deptShortName,
+      deptStatus: deptStatus,
+    };
+    console.log(formObject);
+    setDeptName("");
+    setSchoolName("");
+    setDeptShortName("");
+    setDeptStatus("");
+    props.formResult(formObject);
+  };
+
   return (
-    <form className="container-fluid w-100 form-inline ms-5 ">
+    <form
+      onSubmit={submitHandler}
+      className="container-fluid w-100 form-inline ms-5 "
+    >
       <table className="table">
         <thead>
           <tr>
@@ -18,7 +44,9 @@ export default function DepartForm() {
                   type="text"
                   id="department"
                   className="form-control "
-                  placeholder="Department"
+                  required
+                  value={deptName}
+                  onChange={(e) => setDeptName(e.target.value)}
                 />
               </div>
             </th>
@@ -31,7 +59,9 @@ export default function DepartForm() {
                   type="text"
                   id="school"
                   className="form-control"
-                  placeholder="School"
+                  required
+                  value={schoolName}
+                  onChange={(e) => setSchoolName(e.target.value)}
                 />
               </div>
             </th>
@@ -44,7 +74,9 @@ export default function DepartForm() {
                   type="text"
                   id="shortname"
                   className="form-control"
-                  placeholder="Short Name"
+                  required
+                  value={deptShortName}
+                  onChange={(e) => setDeptShortName(e.target.value)}
                 />
               </div>
             </th>
@@ -53,7 +85,12 @@ export default function DepartForm() {
                 Active
               </label>
               <div name="active" className="form-group">
-                <select className="form-select">
+                <select
+                  className="form-select"
+                  required
+                  value={deptStatus}
+                  onChange={(e) => setDeptStatus(e.target.value)}
+                >
                   <option value=""></option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
