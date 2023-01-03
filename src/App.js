@@ -17,7 +17,7 @@ function App() {
         path="/departments"
         element={
           <Fragment>
-            <Navbar title="OBE" userName="Muhammad Afraz" profile={profile} />
+            <Navbar title="Q-OBE" userName="Muhammad Afraz" profile={profile} />
             <main style={{ display: "flex" }}>
               <Sidebar />
               <div>
