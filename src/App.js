@@ -1,14 +1,14 @@
 import React from "react";
 import { Fragment } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import Navbar from "./components/Header/Navbar";
 import profile from "./Assests/profile.png";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
 import Departments from "./Pages/Departments/Departments";
 
-// import Login from "./Pages/Login/Login";
-// import SignUp from "./Pages/Login/SignUp";
-
+import Login from "./Pages/Login/Login";
 function App() {
   return (
     <Fragment>
