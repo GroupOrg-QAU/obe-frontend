@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SingleDepart(props) {
   return (
-    <form className="container-fluid w-100 form-inline ms-5 ">
+    <div className="container-fluid w-100 form-inline ms-5 ">
       <div className="table-responsive ">
         <table className="table table-striped ">
           <tbody>
@@ -30,6 +30,6 @@ export default function SingleDepart(props) {
           </tbody>
         </table>
       </div>
-    </form>
+    </div>
   );
 }
