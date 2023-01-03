@@ -32,10 +32,10 @@ export default function DepartForm(props) {
       <table className="table">
         <thead>
           <tr>
-            <th scope="col">
-              <label className="form-label">Sr.No</label>
+            <th className="col-1">
+              <label className="form-label col-1">Sr.No</label>
             </th>
-            <th scope="col">
+            <th className="col-3">
               <div className="form-group">
                 <label htmlFor="validationTooltip01" className="form-label">
                   Department
@@ -50,7 +50,7 @@ export default function DepartForm(props) {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-3">
               <div className="form-group">
                 <label htmlFor="school" className="form-label">
                   School
@@ -65,7 +65,7 @@ export default function DepartForm(props) {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-2">
               <div className="form-group">
                 <label htmlFor="shortname" className="form-label">
                   Short Name
@@ -80,7 +80,7 @@ export default function DepartForm(props) {
                 />
               </div>
             </th>
-            <th scope="col">
+            <th className="col-1">
               <label htmlFor="active" className="form-label">
                 Active
               </label>
@@ -97,8 +97,8 @@ export default function DepartForm(props) {
                 </select>
               </div>
             </th>
-            <th scope="col">
-              <button className="btn btn-primary">Add</button>
+            <th className="col-2">
+              <button className="btn btn-primary col-12">Add</button>
             </th>
           </tr>
         </thead>
