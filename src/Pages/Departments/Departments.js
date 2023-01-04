@@ -1,35 +1,25 @@
 import React from "react";
-import { useState } from "react";
-import useForceUpdate from "use-force-update";
 import DepartForm from "./DepartForm";
 import SingleDepart from "./SingleDepart";
-
+import { useSelector } from "react-redux";
 export default function Departments() {
-  const [DUMMY_DEPARTMENTS, setDUMMY_DEPARTMENTS] = useState([]);
-
-  let ShowDepartments = DUMMY_DEPARTMENTS.map((dept, index) => {
+  const departItem = useSelector((state) => state.dept.deprtItem);
+  let ShowDepartments = departItem.map((dept, index) => {
     return (
       <SingleDepart
+        key={Math.random()}
         serialNo={index + 1}
         deptName={dept.deptName}
         schoolName={dept.schoolName}
-        deptShortName={dept.deptShortName}
-        deptStatus={dept.deptStatus}
+        deptShortName={dept.shortName}
+        deptStatus={dept.active}
       ></SingleDepart>
     );
   });
-  const forceUpdate = useForceUpdate();
-
-  const FormResultHandler = (incomingDept) => {
-    let tempDeparts = DUMMY_DEPARTMENTS;
-    tempDeparts.push(incomingDept);
-    setDUMMY_DEPARTMENTS(tempDeparts);
-    forceUpdate();
-  };
 
   return (
     <div>
-      <DepartForm formResult={FormResultHandler} />
+      <DepartForm />
       <div>{ShowDepartments}</div>
     </div>
   );

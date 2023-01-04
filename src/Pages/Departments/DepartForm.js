@@ -1,27 +1,31 @@
 import React from "react";
-
 import { useState } from "react";
+import { deptAction } from "../../Store/Institue/DepartSlice";
+import { useDispatch } from "react-redux";
+
 export default function DepartForm(props) {
   const [deptName, setDeptName] = useState("");
   const [schoolName, setSchoolName] = useState("");
   const [deptShortName, setDeptShortName] = useState("");
   const [deptStatus, setDeptStatus] = useState("");
+  const disptach = useDispatch();
 
   const submitHandler = (event) => {
     event.preventDefault();
 
-    const formObject = {
-      deptName: deptName,
-      schoolName: schoolName,
-      deptShortName: deptShortName,
-      deptStatus: deptStatus,
-    };
-    console.log(formObject);
+    disptach(
+      deptAction.addItemToDepart({
+        deptName,
+        schoolName,
+        deptShortName,
+        deptStatus,
+      })
+    );
+
     setDeptName("");
     setSchoolName("");
     setDeptShortName("");
     setDeptStatus("");
-    props.formResult(formObject);
   };
 
   return (

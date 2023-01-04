@@ -10,19 +10,19 @@ export default function Login() {
           <div className="col-md-9 col-lg-6 col-xl-5 col-sm-3 mt-5">
             <img
               src={loginPic}
-              className="img-fluid"
+              className="img-fluid "
               alt="Laptop With Writing Pencil"
             />
-            <p className="fs-2 text-center" style={{ color: "#0D6EFD" }}>
+            <p className="fs-2 text-center " style={{ color: "#0D6EFD" }}>
               Quaid-i-Azam University, Islamabad
             </p>
             <div className="d-flex justify-content-center align-items-center">
-              <caption style={{ color: "#599CF9" }}>
+              <div className="mb-2" style={{ color: "#599CF9" }}>
                 Department of Information Technology
-              </caption>
+              </div>
             </div>
           </div>
-          <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mt-5 ">
+          <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mt-5  ">
             <form>
               {/* <!-- Email input --> */}
               <div className="form-outline  mb-4 mt-4">
